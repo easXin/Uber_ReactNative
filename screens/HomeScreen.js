@@ -14,6 +14,7 @@ const HomeScreen = () => {
                     }}
                     style={styles.logo}
                 />
+         
                 <NavOptions/>
             </View>
         </SafeAreaView>
