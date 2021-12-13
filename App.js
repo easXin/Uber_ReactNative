@@ -1,16 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,SafeAreaView } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './store';
-
+import HomeScreen from './screens/HomeScreen';
 // >> 1. setup redux
-
-export default function App() {
+function App() {
   return (
     <Provider store={store}>
-      <View style={styles.container}>
-        <Text>Let's build Uber!!!!</Text>
-      </View>
+        <HomeScreen/>
     </Provider>
 
   );
@@ -25,3 +22,5 @@ const styles = StyleSheet.create({
   },
 });
 
+
+export default App;
